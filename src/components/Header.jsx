@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
 import Container from "react-bootstrap/Container";
+import logo from "../images/logo.PNG";
 
 const Header = () => {
     return (
@@ -11,6 +12,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
+                        <img src={logo} />
                         <Nav.Link href="">UÇAK</Nav.Link>
                         <Nav.Link href="">OTEL</Nav.Link>
                         <NavDropdown title="Online İşlemler" id="basic-nav-dropdown">
