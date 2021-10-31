@@ -4,6 +4,7 @@ import OdaSecenekleri from "./components/OdaSecenekleri";
 import OdaBilgileri from "./components/OdaBilgileri";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from 'react-bootstrap/Tab'
+import GenelBilgi from "./components/GenelBilgi";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Tabs defaultActiveKey="odasecenekleri" id="uncontrolled-tab-example" className="mb-3"   transition={false}
             >
                 <Tab eventKey="odasecenekleri" title="Oda Seçenekleri">
+                    <GenelBilgi/>
                     <OdaSecenekleri/>
                     <OdaBilgileri/>
                 </Tab>
