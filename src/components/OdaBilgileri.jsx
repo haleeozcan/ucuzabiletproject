@@ -8,6 +8,7 @@ import büyüklük from "../images/büyüklük.PNG";
 import balayı from "../images/balayı.PNG";
 import denizhavuz from "../images/denizhavuz.PNG";
 import yemeiçme from "../images/yemeiçme.PNG";
+import Col from "react-bootstrap/Col";
 
 const OdaBilgileri = () => {
     return (
