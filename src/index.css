@@ -1,31 +1,56 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.accordion-body{
-  padding:  0 0 0 10px !important;
+
+.accordion-body {
+    padding: 0 0 0 10px !important;
 }
-.list-group-flush>.list-group-item {
-  border-width: 0 !important;
-;
+
+.list-group-flush > .list-group-item {
+    border-width: 0 !important;;
 }
+
 .accordion-button:not(.collapsed) {
-  background-color: #fff !important;
-  box-shadow: none !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
 }
-.accordion-button{
-  transition: color unset !important;
+
+.accordion-button {
+    transition: color unset !important;
 }
-.accordion-button:focus{
-  border-color: #fff !important;
-  box-shadow: none !important;
+
+.accordion-button:focus {
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 5px solid #FDC60D !important;
+    border-spacing: 10px !important;
+}
+
+.nav-tabs .nav-link {
+    border-bottom: 5px solid #f3f3f3 !important;
+}
+
+.nav-tabs {
+    border-bottom: 0 !important;
+}
+
+.nav-link {
+    border: 0 solid !important
+}
+
+.nav-link {
+    transition: no;
 }
