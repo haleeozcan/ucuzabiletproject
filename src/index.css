@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.accordion-body{
+  padding:  0 0 0 10px !important;
+}
+.list-group-flush>.list-group-item {
+  border-width: 0 !important;
+;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+.accordion-button{
+  transition: color unset !important;
+}
+.accordion-button:focus{
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
