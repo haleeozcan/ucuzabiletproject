@@ -7,6 +7,7 @@ import Tab from 'react-bootstrap/Tab'
 import GenelBilgi from "./components/GenelBilgi";
 import OtelAdı from "./components/OtelAdı";
 import Container from "react-bootstrap/Container";
+import OdaFotograflari from "./components/OdaFotograflari";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Header className="App-header">
             </Header>
             <OtelAdı/>
+            <OdaFotograflari/>
             <Container>
                 <Tabs defaultActiveKey="odasecenekleri" id="uncontrolled-tab-example" className="mb-3"
                       transition={false}

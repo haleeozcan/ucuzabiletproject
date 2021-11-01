@@ -75,3 +75,31 @@ code {
 .otelinfo{
     background-color: #f3f3f3;
 }
+
+.head-text {
+    position: relative;
+}
+.text-on-image {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center !important;
+    padding: 5px;
+    left: 2%;
+    top: 3%;
+}
+.photo-number {
+    position: relative;
+}
+.photonumber-text {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center !important;
+    padding: 5px;
+    left: 15%;
+    right: 10%;
+    bottom: 7%;
+}

@@ -13,6 +13,8 @@ const OtelAdı = () => {
                     Alaturka Pansiyon <br/>
                     <Icon.GeoAltFill size={20} className="location-icon"/>
                     Kemer Göynük, Antalya
+                    <br/>
+                    <br/>
                 </Col>
                 <Col xs={12} md={6} style={{padding: 20, fontSize: 12,}}>
                     Anasayfa / Antalya Otelleri / Belek Otelleri / İskele Mevkii, Belek Otelleri / Alaturka Pansiyon
