@@ -58,10 +58,10 @@ const OdaSecenekleri = () => {
                         <Col xs={6} md={3}>
                             <Card.Body style={{textAlign: "left"}}>
                                 <Card.Title>{id.roomName}</Card.Title>
-                                <Card.Text><FontAwesomeIcon icon={faBed} className="location-icon"/>{id.bedDetail}</Card.Text>
+                                <Card.Text><FontAwesomeIcon icon={faBed} className="location-icon"/> {id.bedDetail}</Card.Text>
                                 <Card.Text><FontAwesomeIcon icon={faUsers} className="location-icon"/>{id.peopleNumber}</Card.Text>
                                 <Card.Text><FontAwesomeIcon icon={faVectorSquare} className="location-icon"/>{id.m}</Card.Text>
-                                <Button>Detaylı Oda Bilgisi<FontAwesomeIcon icon={faArrowRight} className="location-icon"/></Button>{' '}
+                                <Button className="detail-room">Detaylı Oda Bilgisi <FontAwesomeIcon icon={faArrowRight} className="location-icon"/></Button>{' '}
                             </Card.Body>
                         </Col>
                         <Col xs={6} md={6} style={{padding: 40}}>
@@ -70,8 +70,8 @@ const OdaSecenekleri = () => {
                                     <Col xs={6}>
                                         <Card.Body style={{textAlign: "left"}}>
                                             <Card.Text><FontAwesomeIcon icon={faUtensils} className="location-icon"/>Oda Kahvaltı</Card.Text>
-                                            <Card.Text><FontAwesomeIcon icon={faChild} className="location-icon"/>0-6 Yaş 1 Çocuk Ücretsiz</Card.Text>
-                                            <Card.Text><img src={badgeCheck} style={{color: "yellow"}}/>
+                                            <Card.Text className="bordering"><FontAwesomeIcon icon={faChild} className="location-icon"/>0-6 Yaş 1 Çocuk Ücretsiz</Card.Text>
+                                            <Card.Text className="bordering"><img src={badgeCheck} style={{color: "yellow"}}/>
                                                 Ücretsiz İptal</Card.Text>
                                         </Card.Body>
                                     </Col>
@@ -79,7 +79,7 @@ const OdaSecenekleri = () => {
                                         <Card.Body style={{textAlign: "left"}}>
                                             <Card.Text>3 Gece İçin Toplam:</Card.Text>
                                             <Card.Title>1900 TL</Card.Title>
-                                            <Button>ODAYI SEÇ</Button>{' '}
+                                            <Button className="select-room"><b>ODAYI SEÇ</b></Button>{' '}
                                         </Card.Body>
                                     </Col>
                                 </Row>

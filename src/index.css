@@ -94,7 +94,8 @@ code {
 }
 .photonumber-text {
     position: absolute;
-    background-color: #fff;
+    background-color: #fff !important;
+    color: #333 !important;
     border-radius: 5px;
     width: 70%;
     text-align: center !important;
@@ -102,4 +103,28 @@ code {
     left: 15%;
     right: 10%;
     bottom: 7%;
+}
+.photonumber-text:focus {
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+.detail-room{
+    background-color: #fff !important;
+    color: #333 !important;
+    font-size: 14px !important;
+    border: none!important;
+}
+.bordering{
+    background-color: #FFF6D6 !important;
+    border: 1px solid #FDC60D !important;
+    font-size: 14px !important;
+    border-radius: 20px !important;
+    padding: 0px 10px 0px 10px !important;
+}
+.select-room{
+    background-color: #fff !important;
+    color: #333 !important;
+    font-size: 14px !important;
+    border: 1px solid #FDC60D !important;
+    padding: 0px 20px 0px 20px !important;
 }

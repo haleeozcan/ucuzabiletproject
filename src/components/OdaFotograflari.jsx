@@ -8,6 +8,7 @@ import photo3 from "../images/photo3.PNG";
 import otelpuan from "../images/otelpuan.png";
 import photo4 from "../images/photo4.PNG";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTh} from "@fortawesome/free-solid-svg-icons";
 
@@ -36,9 +37,10 @@ const OdaFotograflari = () => {
                         <Col xs={6} md={6}>
                             <div className="photo-number">
                                     <Image src={photo4} rounded width="100%" height="100%"/>
-                                <div className='photonumber-text'>
+                                    <Button className="photonumber-text">
                                     <FontAwesomeIcon icon={faTh} className="location-icon"/> <b style={{fontSize:14}}>+14 Fotoğraf</b>
-                                </div>
+                                    </Button>
+
                             </div>
                         </Col>
 
