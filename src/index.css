@@ -61,9 +61,16 @@ code {
     margin-right: 10px!important;
     background-color: #f3f3f3;
 }
+.location-icon{
+    color: #FDC60D !important;
+    background-color: #f3f3f3;
+}
 .safe{
     background-color: #FFF6D6;
     padding: 10px !important;
     text-align: center;
     border-radius: 10px;
+}
+.otelinfo{
+    background-color: #f3f3f3;
 }

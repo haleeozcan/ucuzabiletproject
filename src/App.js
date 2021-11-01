@@ -5,12 +5,14 @@ import OdaBilgileri from "./components/OdaBilgileri";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from 'react-bootstrap/Tab'
 import GenelBilgi from "./components/GenelBilgi";
+import OtelAdı from "./components/OtelAdı";
 
 function App() {
     return (
         <div className="App">
             <Header className="App-header">
             </Header>
+            <OtelAdı/>
             <Tabs defaultActiveKey="odasecenekleri" id="uncontrolled-tab-example" className="mb-3"   transition={false}
             >
                 <Tab eventKey="odasecenekleri" title="Oda Seçenekleri">
