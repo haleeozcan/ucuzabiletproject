@@ -4,11 +4,10 @@ import Row from "react-bootstrap/Row";
 import Accordion from "react-bootstrap/Accordion";
 import ListGroup from "react-bootstrap/ListGroup";
 import '../index.css';
-import büyüklük from "../images/büyüklük.PNG";
 import balayı from "../images/balayı.PNG";
-import denizhavuz from "../images/denizhavuz.PNG";
-import yemeiçme from "../images/yemeiçme.PNG";
 import Col from "react-bootstrap/Col";
+import { faVectorSquare, faSwimmer, faUtensils} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const OdaBilgileri = () => {
     return (
@@ -18,7 +17,7 @@ const OdaBilgileri = () => {
                     <Col xs={6} style={{padding: 20}}>
                         <Accordion.Item>
                             <Accordion.Header>
-                                <img src={büyüklük}/>
+                                <FontAwesomeIcon icon={faVectorSquare} className="location-icon"/>
                                 BÜYÜKLÜK BİLGİSİ
                             </Accordion.Header>
                             <Accordion.Body>
@@ -29,7 +28,7 @@ const OdaBilgileri = () => {
                     <Col xs={6} style={{padding: 20}}>
                     <Accordion.Item>
                         <Accordion.Header>
-                            <img src={denizhavuz}/>
+                            <FontAwesomeIcon icon={faSwimmer} className="location-icon"/>
                             DENİZ&HAVUZ
                         </Accordion.Header>
                         <Accordion.Body>
@@ -72,7 +71,7 @@ const OdaBilgileri = () => {
                     <Col xs={6} style={{padding: 20}}>
                         <Accordion.Item>
                             <Accordion.Header>
-                                <img src={yemeiçme}/>
+                                <FontAwesomeIcon icon={faUtensils} className="location-icon"/>
                                 YEME&İÇME
                             </Accordion.Header>
                             <Accordion.Body>

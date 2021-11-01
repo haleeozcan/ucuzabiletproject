@@ -4,10 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import * as Icon from "react-bootstrap-icons";
 
-const OtelAdı = () => {
+const Arama = () => {
     return (
-        <div className="otelinfo">
-            <Container>
+        <Container className="otelinfo">
             <Row>
                 <Col xs={12} md={3} style={{padding: 20}}>
                     Alaturka Pansiyon <br/>
@@ -24,9 +23,8 @@ const OtelAdı = () => {
                     Beğen
                 </Col>
             </Row>
-            </Container>
-        </div>
-)
+        </Container>
+    )
 };
 
-export default OtelAdı;
+export default Arama;

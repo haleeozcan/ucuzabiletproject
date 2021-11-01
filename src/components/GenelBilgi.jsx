@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import '../index.css';
 import Col from "react-bootstrap/Col";
 import * as Icon from 'react-bootstrap-icons';
+import { faUserCheck, faWater, faUmbrellaBeach, faCertificate} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const GenelBilgi = () => {
     return (
@@ -12,21 +14,21 @@ const GenelBilgi = () => {
                 <Col xs={8} style={{padding: 20}}>
                     <Row>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <Icon.People size={40} className="icon"/>
+                            <FontAwesomeIcon icon={faUserCheck} className="location-icon"/>
                             Çocuk Dostu
                         </Col>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <Icon.Water size={40} className="icon"/>
+                            <FontAwesomeIcon icon={faWater} className="location-icon"/>
                             Denizi Kum
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <Icon.Umbrella size={40} className="icon"/>
+                            <FontAwesomeIcon icon={faUmbrellaBeach} className="location-icon"/>
                             Özel Plaj
                         </Col>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <Icon.Building size={40} className="icon"/>
+                            <FontAwesomeIcon icon={faCertificate} className="location-icon"/>
                             Güvenli Turizm Sertifikalı Otel
                         </Col>
                         Granada Luxury Hotel Belek, Akdeniz'in eşşiz denizi ve ferah atmosferinde lüks ve eğlence
