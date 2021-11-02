@@ -9,6 +9,7 @@ import OtelAdı from "./components/OtelAdı";
 import Container from "react-bootstrap/Container";
 import OdaFotograflari from "./components/OdaFotograflari";
 import React from "react";
+import Row from "react-bootstrap/Row";
 
 function App() {
     return (
@@ -27,16 +28,17 @@ function App() {
                         <OdaBilgileri/>
                     </Tab>
                     <Tab eventKey="genelbilgi" title="Genel Bilgi">
-                        Genel Bilgi
+                        <h5><b>Genel Bilgi</b></h5>
+
                     </Tab>
                     <Tab eventKey="tesisolanaklari" title="Tesis Olanakları">
-                        Tesis Olanakları
+                        <h5><b>Tesis Olanakları</b></h5>
                     </Tab>
                     <Tab eventKey="detaylibilgi" title="Detaylı Bilgi">
-                        Detaylı Bilgi
+                        <h5><b>Detaylı Bilgi</b></h5>
                     </Tab>
                     <Tab eventKey="yorumlar" title="Yorumlar">
-                        Yorumlar
+                        <h5><b>Yorumlar</b></h5>
                     </Tab>
                 </Tabs>
             </Container>

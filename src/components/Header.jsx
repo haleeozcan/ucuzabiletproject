@@ -16,7 +16,7 @@ const Head = () => {
         <Navbar expand="lg" bg="white">
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo}/>
+                    <img src={logo} width={150}/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
