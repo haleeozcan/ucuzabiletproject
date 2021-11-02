@@ -7,6 +7,7 @@ import * as Icon from 'react-bootstrap-icons';
 import {faUserCheck, faWater, faUmbrellaBeach, faCertificate} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import check from "../images/check.png";
+import map from "../images/map.PNG";
 
 const GenelBilgi = () => {
     return (
@@ -75,6 +76,7 @@ const GenelBilgi = () => {
                         <img src={check} width={"25"} height={"25"} className="location-icon"/>
                         <b>Güvenli Turizm Sertifikalı Tesis</b> 🛈
                     </Container>
+                    <img src={map} className="map-photo"/>
                 </Col>
             </Row>
         </Container>

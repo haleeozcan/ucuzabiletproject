@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import OdaFotograflari from "./components/OdaFotograflari";
 import React from "react";
 import Row from "react-bootstrap/Row";
+import Arama from "./components/Arama";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                       transition={false}
                 >
                     <Tab eventKey="odasecenekleri" title="Oda Seçenekleri">
+                        <Arama/>
                         <GenelBilgi/>
                         <OdaSecenekleri/>
                         <OdaBilgileri/>

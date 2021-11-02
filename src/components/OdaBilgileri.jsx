@@ -15,7 +15,7 @@ const OdaBilgileri = () => {
             <Accordion>
                 <Row>
                     <Col xs={12} sm={6} style={{padding: 20}}>
-                        <Accordion.Item>
+                        <Accordion.Item  eventKey="0">
                             <Accordion.Header>
                                 <Row>
                                     <Col xs={12}>
@@ -33,7 +33,7 @@ const OdaBilgileri = () => {
                         </Accordion.Item>
                     </Col>
                     <Col xs={12} sm={6} style={{padding: 20}}>
-                        <Accordion.Item>
+                        <Accordion.Item  eventKey="1">
                             <Accordion.Header>
                                 <Row>
                                     <Col xs={12}>
@@ -58,7 +58,7 @@ const OdaBilgileri = () => {
                         </Accordion.Item>
                     </Col>
                     <Col xs={12} sm={6} style={{padding: 20}}>
-                        <Accordion.Item>
+                        <Accordion.Item  eventKey="2">
                             <Accordion.Header>
                                 <Row>
                                     <Col xs={12}>
@@ -90,7 +90,7 @@ const OdaBilgileri = () => {
                         </Accordion.Item>
                     </Col>
                     <Col xs={12} sm={6} style={{padding: 20}}>
-                        <Accordion.Item>
+                        <Accordion.Item  eventKey="4">
                             <Accordion.Header>
                                 <Row>
                                     <Col xs={12}>
