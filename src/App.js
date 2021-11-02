@@ -8,6 +8,7 @@ import GenelBilgi from "./components/GenelBilgi";
 import OtelAdı from "./components/OtelAdı";
 import Container from "react-bootstrap/Container";
 import OdaFotograflari from "./components/OdaFotograflari";
+import React from "react";
 
 function App() {
     return (
