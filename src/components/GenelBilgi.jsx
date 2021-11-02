@@ -4,32 +4,58 @@ import Row from "react-bootstrap/Row";
 import '../index.css';
 import Col from "react-bootstrap/Col";
 import * as Icon from 'react-bootstrap-icons';
-import { faUserCheck, faWater, faUmbrellaBeach, faCertificate} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUserCheck, faWater, faUmbrellaBeach, faCertificate} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import check from "../images/check.png";
 
 const GenelBilgi = () => {
     return (
         <Container>
             <Row>
-                <Col xs={8} style={{padding: 20}}>
+                <h5><b>Genel Bilgi</b></h5>
+                <Col sm={12} md={8} style={{padding: 20, fontSize: 14}}>
                     <Row>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <FontAwesomeIcon icon={faUserCheck} className="location-icon"/>
-                            Çocuk Dostu
+                            <Row className="align-items-center">
+                                <Col lg={2}>
+                                    <FontAwesomeIcon icon={faUserCheck} className="list-icon"/>
+                                </Col>
+                                <Col xs={6}>
+                                    <b>Çocuk Dostu</b>
+                                </Col>
+                            </Row>
                         </Col>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <FontAwesomeIcon icon={faWater} className="location-icon"/>
-                            Denizi Kum
+                            <Row className="align-items-center">
+                                <Col lg={2}>
+                                    <FontAwesomeIcon icon={faWater} className="list-icon"/>
+                                </Col>
+                                <Col xs={6}>
+                                    <b>Denizi Kum</b>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <FontAwesomeIcon icon={faUmbrellaBeach} className="location-icon"/>
-                            Özel Plaj
+                            <Row className="align-items-center">
+                                <Col lg={2}>
+                                    <FontAwesomeIcon icon={faUmbrellaBeach} className="list-icon"/>
+                                </Col>
+                                <Col xs={6}>
+                                    <b>Özel Plaj</b>
+                                </Col>
+                            </Row>
                         </Col>
                         <Col xs={6} style={{padding: (0, 0, 0, 20)}}>
-                            <FontAwesomeIcon icon={faCertificate} className="location-icon"/>
-                            Güvenli Turizm Sertifikalı Otel
+                            <Row className="align-items-center">
+                                <Col lg={2}>
+                                    <FontAwesomeIcon icon={faCertificate} className="list-icon"/>
+                                </Col>
+                                <Col xs={8}>
+                                    <b>Güvenli Turizm Sertifikalı Otel</b>
+                                </Col>
+                            </Row>
                         </Col>
                         Granada Luxury Hotel Belek, Akdeniz'in eşşiz denizi ve ferah atmosferinde lüks ve eğlence
                         dolu bir tatil yapmak isteyenleri, büyük bir misafirperverlikle karşılıyor.
@@ -41,14 +67,13 @@ const GenelBilgi = () => {
                         <br/>
                         <br/>
                         Tesis, Türk ve dünya mutfaklarının eşsiz lezzetlerini sunan zengin mutfağı ve gün boyu
-                        serinletici
-                        içeceklerin yanı sıra lezzetli atıştırmalıklar sunan snack alanlarıyla önce çıkıyor.
+                        serinletici içeceklerin yanı sıra lezzetli atıştırmalıklar sunan snack alanlarıyla önce çıkıyor.
                     </Row>
                 </Col>
-                <Col xs={4} style={{padding: 20}}>
+                <Col xs={12} md={4} style={{padding: 20, fontSize:14}}>
                     <Container className="safe">
-                        <Icon.CheckCircle size={20}/>
-                        Güvenli Turizm Sertifikalı Tesis 🛈
+                        <img src={check} width={"25"} height={"25"} className="location-icon"/>
+                        <b>Güvenli Turizm Sertifikalı Tesis</b> 🛈
                     </Container>
                 </Col>
             </Row>

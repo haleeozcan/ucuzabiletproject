@@ -48,7 +48,7 @@ const OdaSecenekleri = () => {
 
     return (
         <Container>
-            Oda Seçenekleri
+            <h5><b>Oda Seçenekleri</b></h5>
             {rooms.map(id =>
                 <Card key={id} className="room-card">
                     <Row>
@@ -65,8 +65,7 @@ const OdaSecenekleri = () => {
                                 <Card.Text><FontAwesomeIcon icon={faVectorSquare} className="location-icon"/>{id.m}
                                 </Card.Text>
                                 <Button className="detail-room">
-                                    <div>Detaylı Oda Bilgisi <FontAwesomeIcon icon={faArrowRight}
-                                                                              style={{color: "#FDC60D"}}/></div>
+                                    <div>Detaylı Oda Bilgisi <FontAwesomeIcon icon={faArrowRight} style={{color: "#FDC60D"}}/></div>
                                 </Button>{' '}
                             </Card.Body>
                         </Col>
@@ -78,8 +77,7 @@ const OdaSecenekleri = () => {
                                             <Card.Text>
                                                 <Row className="align-items-center">
                                                     <Col sm={12} md={2}>
-                                                        <FontAwesomeIcon icon={faUtensils}
-                                                                         className="odakahvaltı-icon"/>
+                                                        <FontAwesomeIcon icon={faUtensils} className="odakahvaltı-icon"/>
                                                     </Col>
                                                     <Col xs={8}>
                                                         <span>Oda Kahvaltı</span>
@@ -88,8 +86,7 @@ const OdaSecenekleri = () => {
                                             </Card.Text>
                                             <Card.Text className="bordering"><FontAwesomeIcon icon={faChild} className="location-icon"/>0-6
                                                 Yaş 1 Çocuk Ücretsiz</Card.Text>
-                                            <Card.Text className="bordering"><img src={check} width={"15"} height={"15"}
-                                                                                  className="location-icon"/>
+                                            <Card.Text className="bordering"><img src={check} width={"15"} height={"15"} className="location-icon"/>
                                                 Ücretsiz İptal</Card.Text>
                                         </Card.Body>
                                     </Col>

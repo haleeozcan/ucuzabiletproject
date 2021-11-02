@@ -14,7 +14,7 @@ import {faTh} from "@fortawesome/free-solid-svg-icons";
 
 const OdaFotograflari = () => {
     return (
-        <Container style={{marginTop: -20}}>
+        <Container style={{marginTop: -10}}>
             <Row>
                 <Col xs={6} md={7} >
                     <div className="head-text">
