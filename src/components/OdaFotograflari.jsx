@@ -40,7 +40,6 @@ const OdaFotograflari = () => {
                                     <Button className="photonumber-text">
                                     <FontAwesomeIcon icon={faTh} className="location-icon"/> <b style={{fontSize:14}}>+14 Fotoğraf</b>
                                     </Button>
-
                             </div>
                         </Col>
 
