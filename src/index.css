@@ -22,6 +22,14 @@ code {
     box-shadow: none !important;
 }
 
+.accordion-button::after {
+    background-color: #f3f3f3 !important;
+    border-radius: 50px !important;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    background-size: 16px !important;
+}
+
 .accordion-button {
     transition: color unset !important;
 }
@@ -29,6 +37,19 @@ code {
 .accordion-button:focus {
     border-color: #fff !important;
     box-shadow: none !important;
+}
+
+.accordion-details {
+    color: #848484 !important;
+    padding: 0 0 0 20px !important;
+    font-size: 14px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #333 !important;
+}
+.list-group-flush>.list-group-item {
+    color: #848484 !important;
+    font-size: 14px !important;
 }
 
 .nav-tabs .nav-link.active {
@@ -54,28 +75,37 @@ code {
     color: #333 !important;
 }
 
-.icon{
+.icon {
     color: #FDC60D !important;
     padding: 10px !important;
-    margin-right: 10px!important;
+    margin-right: 10px !important;
     background-color: #f3f3f3;
 }
-.location-icon{
+
+.location-icon {
     color: #FDC60D !important;
 }
-.safe{
+
+.icon-set {
+    color: #FDC60D !important;
+    font-size: 20px;
+}
+
+.safe {
     background-color: #FFF6D6;
     padding: 10px !important;
     text-align: center;
     border-radius: 10px;
 }
-.otelinfo{
+
+.otelinfo {
     background-color: #f3f3f3;
 }
 
 .head-text {
     position: relative;
 }
+
 .text-on-image {
     position: absolute;
     background-color: #fff;
@@ -86,9 +116,11 @@ code {
     left: 2%;
     top: 3%;
 }
+
 .photo-number {
     position: relative;
 }
+
 .photonumber-text {
     position: absolute;
     background-color: #fff !important;
@@ -101,24 +133,28 @@ code {
     right: 10%;
     bottom: 7%;
 }
+
 .photonumber-text:focus {
     border-color: #fff !important;
     box-shadow: none !important;
 }
-.detail-room{
+
+.detail-room {
     background-color: #fff !important;
     color: #333 !important;
     font-size: 14px !important;
-    border: none!important;
+    border: none !important;
 }
-.bordering{
+
+.bordering {
     background-color: #FFF6D6 !important;
     border: 1px solid #FDC60D !important;
     font-size: 14px !important;
     border-radius: 20px !important;
     padding: 0px 10px 0px 10px !important;
 }
-.select-room{
+
+.select-room {
     background-color: #fff !important;
     color: #333 !important;
     font-size: 14px !important;

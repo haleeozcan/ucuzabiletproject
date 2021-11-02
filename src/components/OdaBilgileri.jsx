@@ -6,48 +6,69 @@ import ListGroup from "react-bootstrap/ListGroup";
 import '../index.css';
 import balayı from "../images/balayı.PNG";
 import Col from "react-bootstrap/Col";
-import { faVectorSquare, faSwimmer, faUtensils} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faVectorSquare, faSwimmer, faUtensils} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const OdaBilgileri = () => {
     return (
         <Container>
-                <Accordion>
-                    <Row>
-                    <Col xs={6} style={{padding: 20}}>
+            <Accordion>
+                <Row>
+                    <Col xs={12} sm={6} style={{padding: 20}}>
                         <Accordion.Item>
                             <Accordion.Header>
-                                <FontAwesomeIcon icon={faVectorSquare} className="location-icon"/>
-                                BÜYÜKLÜK BİLGİSİ
+                                <Row>
+                                    <Col xs={12}>
+                                        <FontAwesomeIcon icon={faVectorSquare} className="icon-set"/>
+                                        <br/><br/>
+                                    </Col>
+                                    <Col xs={12}>
+                                        <b>BÜYÜKLÜK BİLGİSİ</b>
+                                    </Col>
+                                </Row>
                             </Accordion.Header>
-                            <Accordion.Body>
-                                1.040.500 m² alan üzerine kurulu tesisin, 531 odası bulunuyor.
+                            <Accordion.Body className="accordion-details">
+                                 1.040.500 m² alan üzerine kurulu tesisin, 531 odası bulunuyor.
                             </Accordion.Body>
                         </Accordion.Item>
                     </Col>
-                    <Col xs={6} style={{padding: 20}}>
-                    <Accordion.Item>
-                        <Accordion.Header>
-                            <FontAwesomeIcon icon={faSwimmer} className="location-icon"/>
-                            DENİZ&HAVUZ
-                        </Accordion.Header>
-                        <Accordion.Body>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item>Mavi Bayraklı</ListGroup.Item>
-                                <ListGroup.Item>Kum Plaj</ListGroup.Item>
-                                <ListGroup.Item>Açık Havuz</ListGroup.Item>
-                                <ListGroup.Item>Kapalı Havuz</ListGroup.Item>
-                                <ListGroup.Item>Çocuk Havuzu</ListGroup.Item>
-                                <ListGroup.Item>Kapalı Çocuk Havuzu</ListGroup.Item>
-                            </ListGroup>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                    </Col>
-                    <Col xs={6} style={{padding: 20}}>
+                    <Col xs={12} sm={6} style={{padding: 20}}>
                         <Accordion.Item>
                             <Accordion.Header>
-                                <img src={balayı}/>
-                                BALAYI
+                                <Row>
+                                    <Col xs={12}>
+                                        <FontAwesomeIcon icon={faSwimmer} className="icon-set"/>
+                                        <br/><br/>
+                                    </Col>
+                                    <Col xs={12}>
+                                        <b>DENİZ&HAVUZ</b>
+                                    </Col>
+                                </Row>
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <ListGroup variant="flush">
+                                    <ListGroup.Item>Mavi Bayraklı</ListGroup.Item>
+                                    <ListGroup.Item>Kum Plaj</ListGroup.Item>
+                                    <ListGroup.Item>Açık Havuz</ListGroup.Item>
+                                    <ListGroup.Item>Kapalı Havuz</ListGroup.Item>
+                                    <ListGroup.Item>Çocuk Havuzu</ListGroup.Item>
+                                    <ListGroup.Item>Kapalı Çocuk Havuzu</ListGroup.Item>
+                                </ListGroup>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Col>
+                    <Col xs={12} sm={6} style={{padding: 20}}>
+                        <Accordion.Item>
+                            <Accordion.Header>
+                                <Row>
+                                    <Col xs={12}>
+                                        <img src={balayı} width={28} height={28}/>
+                                        <br/><br/>
+                                    </Col>
+                                    <Col xs={12}>
+                                        <b>BALAYI</b>
+                                    </Col>
+                                </Row>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <ListGroup variant="flush">
@@ -68,32 +89,39 @@ const OdaBilgileri = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </Col>
-                    <Col xs={6} style={{padding: 20}}>
+                    <Col xs={12} sm={6} style={{padding: 20}}>
                         <Accordion.Item>
                             <Accordion.Header>
-                                <FontAwesomeIcon icon={faUtensils} className="location-icon"/>
-                                YEME&İÇME
+                                <Row>
+                                    <Col xs={12}>
+                                        <FontAwesomeIcon icon={faUtensils} className="icon-set"/>
+                                        <br/><br/>
+                                    </Col>
+                                    <Col xs={12}>
+                                        <b>YEME&İÇME</b>
+                                    </Col>
+                                </Row>
                             </Accordion.Header>
                             <Accordion.Body>
                                 <ListGroup variant="flush">
-                                    <ListGroup.Item>07.00-10.00 Kahvaltı</ListGroup.Item>
-                                    <ListGroup.Item>10.00-11.00 Geç Kahvaltı</ListGroup.Item>
-                                    <ListGroup.Item>11.00-22.00 Pastane</ListGroup.Item>
-                                    <ListGroup.Item>12.30-16.00 Snack Menü (Food Park)</ListGroup.Item>
-                                    <ListGroup.Item>12.30-14.30 Öğlen Yemeği</ListGroup.Item>
-                                    <ListGroup.Item>12.30-16.00 Donut House</ListGroup.Item>
-                                    <ListGroup.Item>12.30-18.00 Dondurma</ListGroup.Item>
-                                    <ListGroup.Item>12.30-18.00 Gözleme (Beach Snack)</ListGroup.Item>
-                                    <ListGroup.Item>18.30-21.00 Akşam Yemeği</ListGroup.Item>
-                                    <ListGroup.Item>19.00-22.00 A la Carte Restoranlar</ListGroup.Item>
-                                    <ListGroup.Item>20.45-00.00 Tomorrow Land Bar</ListGroup.Item>
-                                    <ListGroup.Item>00.00-03.00 Gece Büfesi</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>07.00-10.00</b> Kahvaltı</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>10.00-11.00</b> Geç Kahvaltı</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>11.00-22.00</b> Pastane</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>12.30-16.00</b> Snack Menü (Food Park)</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>12.30-14.30</b> Öğlen Yemeği</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>12.30-16.00</b> Donut House</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>12.30-18.00</b> Dondurma</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>12.30-18.00</b> Gözleme (Beach Snack)</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>18.30-21.00</b> Akşam Yemeği</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>19.00-22.00</b> A la Carte Restoranlar</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>20.45-00.00</b> Tomorrow Land Bar</ListGroup.Item>
+                                    <ListGroup.Item><b style={{color: "#333"}}>00.00-03.00</b> Gece Büfesi</ListGroup.Item>
                                 </ListGroup>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Col>
-                    </Row>
-                </Accordion>
+                </Row>
+            </Accordion>
         </Container>
 
     )
